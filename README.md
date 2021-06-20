@@ -47,7 +47,7 @@ The distance downrange is calculated over these steps:
 
 ## OCR
 
-### Some images grabbed by the code during an extract
+Some images grabbed by the code during an extract.
 
 ![](img/text_height.jpg) ![](img/text_speed.jpg)
 
