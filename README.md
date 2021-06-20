@@ -8,7 +8,7 @@ gravity turn/launch profile.
 ## Source video
 
 You could use `youtube-dl` to get https://www.youtube.com/watch?v=QJXxVtp3KqI,
-downloading with to an mp4.
+downloading to an mp4.
 
 I don't know if that's legal where you are so I'll leave that bit up to you.
 
