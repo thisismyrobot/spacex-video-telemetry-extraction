@@ -37,7 +37,7 @@ def height_m(frame, swapped=False):
         pass
 
 
-def extract(video_path, start, swap, every=1):
+def extract(video_path, start, swap, every=15):
     cap = cv2.VideoCapture(video_path)
 
     # Seek to start
@@ -65,11 +65,8 @@ def extract(video_path, start, swap, every=1):
         pil_im.thumbnail((1280, 720))
         pil_im.save('working/last_frame.jpg')
 
-        speed = speed_ms(pil_im)
         altitude = height_m(pil_im)
-
-        # Ignore it when no data can be found.
-        if speed is None or altitude is None:
+        if altitude is None:
             continue
 
         # Update data on change of lowest granularity value, the altitude.
@@ -78,6 +75,12 @@ def extract(video_path, start, swap, every=1):
 
         # Decimal point lost - this can happen with noisy visuals.
         if last_altitude > 0 and altitude >= last_altitude * 5:
+            continue
+
+        # No point wasting cycles extracting speed until we have a useful
+        # altitude delta.
+        speed = speed_ms(pil_im)
+        if speed is None:
             continue
 
         # Sign is irrelevant, we're measuring downrange regardless. This

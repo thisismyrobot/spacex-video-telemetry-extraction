@@ -3,7 +3,7 @@
 Idea: use OCR to convert the telemetry info in the SpaceX launch videos into
 data for a plottable visual gravity turn/launch profile.
 
-### **NOTE:** This is just a WIP idea and nothing in here is promised to work for you
+### **NOTE:** This is just a WIP idea and nothing in here is promised to work for you :)
 
 Immediately obvious TODOs:
  * Detect and track stage 2.
