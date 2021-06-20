@@ -3,7 +3,11 @@
 Idea: convert the telemetry info in the SpaceX launch videos into a visual
 gravity turn/launch profile.
 
-**This is just a WIP idea and nothing in here is promised to work for you**
+### **NOTE:** This is just a WIP idea and nothing in here is promised to work for you
+
+Immediately obvious TODOs:
+ * Detect and track stage 2.
+ * Output to console if redirecting to a file.
 
 ## Source video
 
@@ -18,7 +22,7 @@ I don't know if that's legal where you are so I'll leave that bit up to you.
 
 Firstly, Tesseract: https://github.com/tesseract-ocr/tesseract
 
-Then with Python 2.9.
+Then with Python 3.9.
 
     pipenv install
 
