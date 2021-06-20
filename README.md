@@ -1,7 +1,7 @@
 # SpaceX launch tracking
 
 Idea: use OCR to convert the telemetry info in the SpaceX launch videos into
-data for a visual gravity turn/launch profile.
+data for a plottable visual gravity turn/launch profile.
 
 ### **NOTE:** This is just a WIP idea and nothing in here is promised to work for you
 
@@ -15,6 +15,8 @@ You could use `youtube-dl` to get https://www.youtube.com/watch?v=QJXxVtp3KqI,
 downloading to an mp4.
 
 I don't know if that's legal where you are so I'll leave that bit up to you.
+
+This code is set up for a video that can be shrunk to 1280x720.
 
 ## Generating data
 
