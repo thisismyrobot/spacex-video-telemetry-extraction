@@ -45,8 +45,16 @@ The distance downrange is calculated over these steps:
  * The change in altitude tells us a distance straight up. The average velocity over time gives us a distance actually travelled. Knowing the two distances we can use Pythagoras to work out the downrange distance.
  * Accumulating these downrange distances and plotting against altitude gives us a flight profile.
 
-## Examples
+## OCR
+
+### Some images grabbed by the code during an extract
+
+![](img/text_height.jpg) ![](img/text_speed.jpg)
+
+![](img/last_frame.jpg)
+
+## Example profiles
 
 ### 1 FPS sample rate, just stage 1
 
-![](runs/1FPS_Stage_1.png)
+![](img/1FPS_Stage_1.png)
