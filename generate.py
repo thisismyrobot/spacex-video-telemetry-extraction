@@ -89,11 +89,10 @@ def extract(video_path, start, swap, every=30):
 
         delta_elapsed = elapsed - last_elapsed
 
-        # This assumes constant speed, I need to account for acceleration.
-        average_speed = (speed + last_speed) / 2.0
-
-        # D = VT.
-        distance_travelled = delta_elapsed * average_speed
+        # https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration
+        # Assuming constant acceleration over elapsed time.
+        average_acceleration = (speed - last_speed) / delta_elapsed
+        distance_travelled = (last_speed * delta_elapsed) + (0.5 * abs(average_acceleration) * math.pow(delta_elapsed, 2))
 
         # Noisy values can create invalid (non-right-angle) triangles
         if distance_travelled < delta_altitude:
