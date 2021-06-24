@@ -37,7 +37,7 @@ def height_m(frame, swapped=False):
         pass
 
 
-def extract(video_path, start, swap, every=15):
+def extract(video_path, start, swap, every=30):
     cap = cv2.VideoCapture(video_path)
 
     # Seek to start
