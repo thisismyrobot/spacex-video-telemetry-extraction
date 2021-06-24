@@ -6,6 +6,7 @@ data for a plottable visual gravity turn/launch profile.
 ### **NOTE:** This is just a WIP idea and nothing in here is promised to work for you :)
 
 Immediately obvious TODOs:
+ * Cache extracted values.
  * Detect and track stage 2.
  * Output to console if redirecting to a file.
 
@@ -58,5 +59,9 @@ Some images grabbed by the code during an extract.
 ## Example profiles
 
 ### 1 FPS sample rate, just stage 1
+
+Ran with [code tagged at 1.0](https://github.com/thisismyrobot/spacex-video-telemetry-extraction/releases/tag/1.0).
+
+This was stunningly successful, the final landing distance for Stage 1 was [647km down range according to the Everyday Astronaut](https://everydayastronaut.com/gps-iii-sv05-falcon-9-block-5-2/) and my code's simple estimation approach put it at 622.747km.
 
 ![](img/1FPS_Stage_1.png)
